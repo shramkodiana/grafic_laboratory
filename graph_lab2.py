@@ -12,7 +12,7 @@ df.columns = h
 drawing = ImageDraw.Draw(image)
 for index, row in df.iterrows():
     x, y = row['y'], 540 - row['x']
-    drawing.point((x, y), fill=ImageColor.getrgb("black"))
+    drawing.point((x, y), fill=ImageColor.getrgb("red"))
 image.show()
 name = input("Введіть назву для збереженої картинки(у вигляді 'file_name.png'):")
 image.save(name, "PNG")
